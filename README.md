@@ -16,7 +16,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-The processed cell-line split and precomputed features are included in `data/`. If you need to restore these files, run `python prepare_data.py` to retrieve and verify them from a pinned HyperSynergy revision. [Data provenance and layout](data/README.md)
+The processed cell-line split and precomputed features are included in `data/`. Run `python prepare_data.py` to restore missing files and verify their checksums. [Data layout and checksums](data/README.md)
 
 ## Reproduce the few-shot pipeline
 
