@@ -45,16 +45,6 @@ The encoder and model checkpoints are written to `checkpoints/diffpro_encoder.pt
 
 Use `--adaptation-steps 0` with a positive `--support` to evaluate the paper's zero-step control. This release covers few-shot regression and that control. The published zero-shot, classification, and conditional diffusion visualization experiments require separate implementations. The release has passed end-to-end smoke checks. A full rerun of the paper's performance tables is pending.
 
-### Shorter CPU run
-
-```bash
-python pretrain_diffpro.py --device cpu --epochs 1 --batch-size 32
-python train_diffpro.py --device cpu --steps 1 --batch-size 2 --val-batches 1
-python evaluate_diffpro.py --device cpu --batch-size 2 --test-batches 1
-```
-
-Pretraining still processes the full training split for that epoch. Use these settings to check that all three stages run.
-
 ## Citation and acknowledgments
 
 ```bibtex
