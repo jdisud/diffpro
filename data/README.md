@@ -1,6 +1,6 @@
 # Benchmark data
 
-The package includes the processed cell-line split and precomputed features distributed by HyperSynergy. The original DrugComb downloads are available through the data portal linked below. `prepare_data.py` can restore the processed files from the upstream revision and verify them with [sha256.txt](sha256.txt). The checksum for each tab-separated text file uses LF line endings. Binary features are verified byte for byte. [HyperSynergy data at the pinned revision](https://github.com/NWPU-903PR/HyperSynergy/tree/f7e23e2b381b0120e88222124f0b06baac432630/data)
+The package includes the processed cell-line split and precomputed features distributed by HyperSynergy. The original DrugComb downloads are available through the data portal linked below. [Upstream benchmark data](https://github.com/NWPU-903PR/HyperSynergy/tree/f7e23e2b381b0120e88222124f0b06baac432630/data)
 
 ```text
 data/
