@@ -6,17 +6,15 @@ Implementation of the few-shot regression pipeline from *DiffPro: Decoupled Gene
 
 *Framework figure from Jin et al., KDD 2026. [Published paper](https://doi.org/10.1145/3770855.3818930)*
 
-## Setup
+## Requirements
 
-Run these commands from the repository root. The CPU smoke test used Python 3.12, PyTorch 2.14.0 and PyTorch Geometric 2.6.1. A CUDA GPU is useful for full training.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-The processed cell-line split and precomputed features are included in `data/`. Run `python prepare_data.py` to restore missing files and verify their checksums. [Data layout and checksums](data/README.md)
+- Python 3.12
+- `torch>=2.0`
+- `torch-geometric>=2.3`
+- `numpy>=1.23`
+- `pandas>=1.5`
+- `scipy>=1.9`
+- `scikit-learn>=1.2`
 
 ## Reproduce the few-shot pipeline
 
